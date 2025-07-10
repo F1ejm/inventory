@@ -1,0 +1,9 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1752185278
+icon.svg::CompressedTexture2D/CompressedTexture2D::54061622400917468::1752083163::1752083222::1::::<><><>0<>0<>8d004c728e259a251ab24c51b8f189da<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+README.md::TextFile/TextFile::-1::1752083163::0::1::::<><><>0<>0<><>::
+::res://Character/::1752084674
+cahracter.gd::GDScript::5938089992239423760::1752084671::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Cahracter.tscn::PackedScene::6094683224564118853::1752084674::0::1::::<><><>0<>0<><>::uid://cqupqev6uams3::::res://Character/cahracter.gd<>uid://1gnfnsaykhg::::res://icon.svg
+::res://Main/::1752084674
+main.tscn::PackedScene::4556217208416233225::1752084674::0::1::::<><><>0<>0<><>::uid://cs3kso4fghgbt::::res://Character/Cahracter.tscn
