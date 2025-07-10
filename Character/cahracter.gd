@@ -1,21 +1,17 @@
 extends CharacterBody2D
 
 var dir : Vector2
-var speed := 100
+var speed := 5000
 
 func _process(delta: float) -> void:
-	velocity = dir
-	dir = Vector2(0,0)
-	move_and_slide()
-	
-func _input(event: InputEvent) -> void:
-	dir = Vector2(0,0)
-	if event.is_action("W"):
+	dir = Vector2(0,0) 
+	if Input.is_action_pressed("W"):
 		dir += Vector2(0,-speed)
-	if event.is_action("S"):
+	if Input.is_action_pressed("S"):
 		dir += Vector2(0,speed)
-	if event.is_action("A"):
+	if Input.is_action_pressed("A"):
 		dir += Vector2(-speed,0)
-	if event.is_action("D"):
+	if Input.is_action_pressed("D"):
 		dir += Vector2(speed,0)
-	print(dir)
+	velocity = dir * delta
+	move_and_slide()
