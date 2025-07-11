@@ -1,1 +1,4 @@
+res://Main/main.tscn
+res://Character/Cahracter.tscn
 res://Character/cahracter.gd
+res://Items/scenes_of_items/sword.tscn

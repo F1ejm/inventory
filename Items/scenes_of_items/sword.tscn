@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://dr2e3mhxd5dem"]
+
+[ext_resource type="Script" uid="uid://lxile0s15rfr" path="res://Items/scenes_of_items/sword.gd" id="1_2d35r"]
+[ext_resource type="Resource" uid="uid://c4q3dyac1qgml" path="res://Items/res/sword.tres" id="2_oywea"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wrmtx"]
+radius = 44.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2d35r"]
+radius = 44.4072
+
+[node name="StaticBody2D" type="StaticBody2D" node_paths=PackedStringArray("txt") groups=["Item"]]
+script = ExtResource("1_2d35r")
+item_info = ExtResource("2_oywea")
+quantity = 1
+txt = NodePath("Sprite2D")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_wrmtx")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_2d35r")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
