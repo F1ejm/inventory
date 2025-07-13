@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b56ch450exqi8"]
 
-[ext_resource type="PackedScene" uid="uid://cs3kso4fghgbt" path="res://Character/Cahracter.tscn" id="1_yh5la"]
+[ext_resource type="PackedScene" uid="uid://cs3kso4fghgbt" path="res://Character/Character.tscn" id="1_yh5la"]
 [ext_resource type="PackedScene" uid="uid://dr2e3mhxd5dem" path="res://Items/scenes_of_items/sword.tscn" id="2_2w1kt"]
 
 [node name="Main" type="Node2D"]
@@ -8,4 +8,4 @@
 [node name="Character" parent="." instance=ExtResource("1_yh5la")]
 
 [node name="StaticBody2D" parent="." instance=ExtResource("2_2w1kt")]
-position = Vector2(454, 143)
+position = Vector2(160, 88)

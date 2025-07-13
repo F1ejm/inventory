@@ -7,3 +7,5 @@ class_name inventory
 
 func insert(item):
 	print(item) 
+	items.append(item)
+	capasity -= 1 

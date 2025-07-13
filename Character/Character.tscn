@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://cs3kso4fghgbt"]
+[gd_scene load_steps=6 format=3 uid="uid://cs3kso4fghgbt"]
 
-[ext_resource type="Script" uid="uid://cqupqev6uams3" path="res://Character/cahracter.gd" id="1_mb54f"]
+[ext_resource type="Script" uid="uid://cqupqev6uams3" path="res://Character/Character.gd" id="1_mb54f"]
 [ext_resource type="Texture2D" uid="uid://1gnfnsaykhg" path="res://icon.svg" id="2_2nrhw"]
+[ext_resource type="Resource" uid="uid://c5x25ncxn2ia7" path="res://Character/inventory/inventory.tres" id="2_vbi5m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ei4re"]
 size = Vector2(60, 60)
@@ -11,6 +12,7 @@ radius = 103.392
 
 [node name="Character" type="CharacterBody2D" groups=["Player"]]
 script = ExtResource("1_mb54f")
+inv = ExtResource("2_vbi5m")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.5, 0.5)

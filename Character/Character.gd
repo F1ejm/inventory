@@ -1,5 +1,9 @@
 extends CharacterBody2D
 
+@export var inv : inventory
+
+#-------------------------------------------------------------------------------
+
 var dir : Vector2
 var speed := 5000
 
@@ -26,4 +30,6 @@ func _process(delta: float) -> void:
 
 func character_can_grab(body: Node2D) -> void:
 	if body.is_in_group("Item"):
-		print("no i chuj nie chce mi sie dzisiaj tego pisac bo juz jest pozno a jutro trzeba wsacz i to wczesnie wiec nie pozdrawiam wszystkich i ogonie to lubie czogi i peptipoptery w szczegolnosci te bojowe xd co ja gadam XD")
+#		print("no i chuj nie chce mi sie dzisiaj tego pisac bo juz jest pozno a jutro trzeba wsacz i to wczesnie wiec nie pozdrawiam wszystkich i ogonie to lubie czogi i peptipoptery w szczegolnosci te bojowe xd co ja gadam XD")
+#		print(body.item_info.name)
+		inv.insert(body.item_info)
