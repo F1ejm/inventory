@@ -1,2 +1,6 @@
 res://Character/inventory/UI/inventory_ui.tscn
 res://Character/inventory/inventory.tres
+res://Character/inventory/UI/inventory_ui.gd
+res://Main/main.tscn
+res://Character/Character.tscn
+res://Items/scenes_of_items/sword.tscn

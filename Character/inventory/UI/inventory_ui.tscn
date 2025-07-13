@@ -1,17 +1,31 @@
-[gd_scene format=3 uid="uid://cnhp5xf4b3r7p"]
+[gd_scene load_steps=3 format=3 uid="uid://cnhp5xf4b3r7p"]
 
-[node name="InventoryUi" type="Control"]
+[ext_resource type="Script" uid="uid://cgqglrtrydk37" path="res://Character/inventory/UI/inventory_ui.gd" id="1_b6fl3"]
+[ext_resource type="Resource" uid="uid://c5x25ncxn2ia7" path="res://Character/inventory/inventory.tres" id="2_uahkw"]
+
+[node name="InventoryUi" type="Control" node_paths=PackedStringArray("list")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_b6fl3")
+inv = ExtResource("2_uahkw")
+list = NodePath("CenterContainer/ItemList")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="ItemList" type="ItemList" parent="CenterContainer"]
 layout_mode = 2
+item_count = 1
+max_columns = 3
+same_column_width = true
+fixed_column_width = 3
+icon_mode = 0
