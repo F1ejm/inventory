@@ -1,17 +1,17 @@
-[gd_scene load_steps=5 format=3 uid="uid://dr2e3mhxd5dem"]
+[gd_scene load_steps=5 format=3 uid="uid://c1uw1ee224nj7"]
 
-[ext_resource type="Script" uid="uid://lxile0s15rfr" path="res://Items/scenes_of_items/sword.gd" id="1_2d35r"]
-[ext_resource type="Resource" uid="uid://c4q3dyac1qgml" path="res://Items/res/sword.tres" id="2_oywea"]
+[ext_resource type="Script" uid="uid://lxile0s15rfr" path="res://Items/scenes_of_items/sword.gd" id="1_a5c85"]
+[ext_resource type="Resource" uid="uid://cxbc5043fyajx" path="res://Items/res/water.tres" id="2_a5c85"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_wrmtx"]
-radius = 14.0357
+radius = 25.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2d35r"]
-radius = 14.0357
+radius = 25.0799
 
 [node name="StaticBody2D" type="StaticBody2D" node_paths=PackedStringArray("txt") groups=["Item"]]
-script = ExtResource("1_2d35r")
-item_info = ExtResource("2_oywea")
+script = ExtResource("1_a5c85")
+item_info = ExtResource("2_a5c85")
 quantity = 1
 txt = NodePath("Sprite2D")
 

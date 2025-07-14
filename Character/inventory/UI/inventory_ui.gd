@@ -5,5 +5,5 @@ extends Control
 @export var list : ItemList 
 
 
-func _process(delta: float) -> void:
-	list.add_item("nice dick",null,true)
+#func _process(delta: float) -> void:
+#	list.add_item("nice dick",null,true)

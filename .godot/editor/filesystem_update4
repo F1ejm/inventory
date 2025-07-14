@@ -1,6 +1,6 @@
-res://Character/inventory/UI/inventory_ui.tscn
-res://Character/inventory/inventory.tres
-res://Character/inventory/UI/inventory_ui.gd
 res://Main/main.tscn
+res://Character/inventory/inventory.tres
 res://Character/Character.tscn
+res://Character/inventory/UI/inventory_ui.tscn
 res://Items/scenes_of_items/sword.tscn
+res://Items/scenes_of_items/water.tscn

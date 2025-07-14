@@ -1,9 +1,11 @@
-[gd_resource type="Resource" script_class="item" load_steps=2 format=3 uid="uid://cxbc5043fyajx"]
+[gd_resource type="Resource" script_class="item" load_steps=3 format=3 uid="uid://cxbc5043fyajx"]
 
 [ext_resource type="Script" uid="uid://bcijv4gywulxc" path="res://Items/res/item_res.gd" id="1_wnpwf"]
+[ext_resource type="Texture2D" uid="uid://cmletigqf6ehg" path="res://output-onlinepngtools-she3642hfhxet.png" id="1_xefj7"]
 
 [resource]
 script = ExtResource("1_wnpwf")
-name = null
-power = 0.0
+name = "Water"
+icon = ExtResource("1_xefj7")
+power = 500.0
 metadata/_custom_type_script = "uid://bcijv4gywulxc"

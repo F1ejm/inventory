@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://b56ch450exqi8"]
+[gd_scene load_steps=4 format=3 uid="uid://b56ch450exqi8"]
 
 [ext_resource type="PackedScene" uid="uid://cs3kso4fghgbt" path="res://Character/Character.tscn" id="1_yh5la"]
 [ext_resource type="PackedScene" uid="uid://dr2e3mhxd5dem" path="res://Items/scenes_of_items/sword.tscn" id="2_2w1kt"]
+[ext_resource type="PackedScene" uid="uid://c1uw1ee224nj7" path="res://Items/scenes_of_items/water.tscn" id="3_qvhan"]
 
 [node name="Main" type="Node2D"]
 
@@ -9,3 +10,9 @@
 
 [node name="StaticBody2D" parent="." instance=ExtResource("2_2w1kt")]
 position = Vector2(160, 88)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("3_qvhan")]
+position = Vector2(136, 290)
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("3_qvhan")]
+position = Vector2(316, 169)

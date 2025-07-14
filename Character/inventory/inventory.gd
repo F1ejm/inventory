@@ -3,9 +3,19 @@ extends Resource
 class_name inventory
 
 @export var items : Array
-@export var capasity : int
+var capasity = 2
 
-func insert(item):
-	print(item) 
-	items.append(item)
-	capasity -= 1 
+
+func insert(body):
+#	if capasity == 0:
+#		print("fajne")
+#		print(items)
+#	else:
+	print(capasity) 
+	if capasity > 0 :
+		items.append(body.item_info)
+		body.queue_free()
+		capasity -= 1 
+		print(items)
+	else:
+		print("nichu")
