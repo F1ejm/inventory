@@ -12,7 +12,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_b6fl3")
 inv = ExtResource("2_uahkw")
-list = NodePath("CenterContainer/ItemList")
+list = NodePath("")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 1
@@ -22,10 +22,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ItemList" type="ItemList" parent="CenterContainer"]
+[node name="GridContainer" type="GridContainer" parent="CenterContainer"]
 layout_mode = 2
-item_count = 1
-max_columns = 3
-same_column_width = true
-fixed_column_width = 3
-icon_mode = 0
+
+[node name="Panel" type="Panel" parent="CenterContainer/GridContainer"]
+layout_mode = 2

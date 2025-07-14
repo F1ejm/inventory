@@ -8,7 +8,7 @@ var capasity = 2
 
 func insert(body):
 #	if capasity == 0:
-#		print("fajne")
+#		print("fajne")s
 #		print(items)
 #	else:
 	print(capasity) 

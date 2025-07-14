@@ -4,3 +4,4 @@ res://Character/Character.tscn
 res://Character/inventory/UI/inventory_ui.tscn
 res://Items/scenes_of_items/sword.tscn
 res://Items/scenes_of_items/water.tscn
+res://Character/inventory/inventory.gd
