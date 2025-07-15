@@ -1,10 +1,14 @@
+CanvasLayer
+NinePatchRect
+Label
+Sprite2D
+Control
 Panel
 GridContainer
 ItemList
 CenterContainer
 CollisionShape2D
 Area2D
-Sprite2D
 StaticBody2D
 CharacterBody2D
 Node2D

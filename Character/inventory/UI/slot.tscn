@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://ck7dlebcvl3ji"]
+
+[ext_resource type="Script" uid="uid://b2lmepsnt7agp" path="res://Character/inventory/UI/slot.gd" id="1_vg0rt"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_qhcxg"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_vg0rt")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = -92.0
+offset_top = -94.0
+offset_right = 92.0
+offset_bottom = 93.0
+texture = SubResource("PlaceholderTexture2D_qhcxg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_top = 23.0
+offset_right = 92.0
+offset_bottom = 99.0
+theme_override_font_sizes/font_size = 55
+text = "1"
+horizontal_alignment = 2

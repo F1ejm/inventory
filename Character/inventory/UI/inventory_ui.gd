@@ -2,8 +2,8 @@ extends Control
 
 
 @export var inv : inventory
-@export var list : ItemList 
+@export var list : Array[Control]
 
-
-#func _process(delta: float) -> void:
-#	list.add_item("nice dick",null,true)
+func _ready() -> void:
+	print("Nice Dick BRO")
+	
