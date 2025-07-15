@@ -16,7 +16,16 @@ position = Vector2(160, 88)
 position = Vector2(136, 290)
 
 [node name="StaticBody2D3" parent="." instance=ExtResource("3_qvhan")]
-position = Vector2(316, 169)
+position = Vector2(405, 193)
+
+[node name="StaticBody2D4" parent="." instance=ExtResource("3_qvhan")]
+position = Vector2(185, 170)
+
+[node name="StaticBody2D5" parent="." instance=ExtResource("3_qvhan")]
+position = Vector2(338, 60)
+
+[node name="StaticBody2D6" parent="." instance=ExtResource("3_qvhan")]
+position = Vector2(517, 139)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

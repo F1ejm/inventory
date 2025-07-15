@@ -4,7 +4,7 @@
 [ext_resource type="Resource" uid="uid://c5x25ncxn2ia7" path="res://Character/inventory/inventory.tres" id="2_uahkw"]
 [ext_resource type="PackedScene" uid="uid://ck7dlebcvl3ji" path="res://Character/inventory/UI/slot.tscn" id="3_rge41"]
 
-[node name="InventoryUi" type="Control"]
+[node name="InventoryUi" type="Control" node_paths=PackedStringArray("list")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -13,6 +13,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_b6fl3")
 inv = ExtResource("2_uahkw")
+list = [NodePath("GridContainer/Slot1"), NodePath("GridContainer/Slot2"), NodePath("GridContainer/Slot3")]
 
 [node name="GridContainer" type="GridContainer" parent="."]
 layout_mode = 1

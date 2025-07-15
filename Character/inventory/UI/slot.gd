@@ -1,5 +1,9 @@
 extends Control
 
-@export var txt : Sprite2D
-@export var label : Label 
-@export var pressed : bool
+var txt : Texture
+var label : Label 
+var pressed : bool
+
+func _process(delta: float) -> void:
+	if txt != null:
+		$Sprite2D.texture = txt
