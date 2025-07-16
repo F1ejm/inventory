@@ -13,7 +13,12 @@ func insert(body):
 	if capasity > 0 :
 		body.queue_free()
 		if items.has(body.item_info):
+			var index = items.find(body.item_info)
+			items[index].quantity += 1 
+			print(items[index].quantity)
+			print(items)
 			print("do starego slota")
+			return
 		items.append(body.item_info)
 		capasity -= 1 
 	else:
