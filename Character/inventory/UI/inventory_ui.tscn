@@ -13,7 +13,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_b6fl3")
 inv = ExtResource("2_uahkw")
-list = [NodePath("GridContainer/Slot1"), NodePath("GridContainer/Slot2"), NodePath("GridContainer/Slot3")]
+list = [NodePath("GridContainer/Slot1"), NodePath("GridContainer/Slot2"), NodePath("GridContainer/Slot3"), NodePath("GridContainer/Slot4"), NodePath("GridContainer/Slot5"), NodePath("GridContainer/Slot6")]
 
 [node name="GridContainer" type="GridContainer" parent="."]
 layout_mode = 1
@@ -22,11 +22,13 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -395.0
-offset_right = 395.0
+offset_left = -250.0
+offset_top = 238.0
+offset_right = 250.0
+offset_bottom = 238.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/h_separation = 158
+theme_override_constants/h_separation = 100
 columns = 6
 
 [node name="Slot1" parent="GridContainer" instance=ExtResource("3_rge41")]

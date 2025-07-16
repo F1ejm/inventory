@@ -2,7 +2,7 @@ extends Control
 
 var txt : Texture
 var label : Label 
-var pressed : bool
+var quantity : int 
 
 func _process(delta: float) -> void:
 	if txt != null:
