@@ -5,4 +5,9 @@ res://Items/scenes_of_items/sword.tscn
 res://Items/scenes_of_items/water.tscn
 res://Character/inventory/UI/inventory_ui.tscn
 res://Character/inventory/UI/slot.tscn
+res://Character/inventory/UI/inventory_ui.gd
+res://Character/inventory/UI/slot.gd
+res://Items/res/sword.tres
+res://Items/res/water.tres
+res://Items/res/item_res.gd
 res://Character/inventory/inventory.gd

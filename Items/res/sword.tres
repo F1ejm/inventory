@@ -8,4 +8,5 @@ script = ExtResource("1_yqe7w")
 name = "Sword"
 icon = ExtResource("1_daha1")
 power = 100.0
+quantity = 1
 metadata/_custom_type_script = "uid://bcijv4gywulxc"

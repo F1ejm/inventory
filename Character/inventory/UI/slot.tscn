@@ -4,12 +4,21 @@
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_qhcxg"]
 
-[node name="Slot" type="Control"]
+[node name="Slot" type="Control" node_paths=PackedStringArray("sprite", "label")]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_vg0rt")
+sprite = NodePath("Sprite2D")
+label = NodePath("Label")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = -36.0
+offset_top = -37.0
+offset_right = 36.0
+offset_bottom = 36.0
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 texture_filter = 1
@@ -31,3 +40,5 @@ offset_bottom = 40.0
 theme_override_font_sizes/font_size = 37
 text = "1"
 horizontal_alignment = 2
+
+[connection signal="pressed" from="Button" to="." method="on_slot_pressed"]

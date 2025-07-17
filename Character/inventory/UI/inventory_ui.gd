@@ -11,5 +11,9 @@ func _process(delta: float) -> void:
 	
 #petla pop to zeby dostac sie do kazdego slota po kolei :
 	for item in inv.items.size():
-		list[item].txt = inv.items[item].icon
-#		print(inv.items[item].name)
+		if inv.items[item] == null:
+			list[item].quantity = 0
+		else:
+			list[item].txt = inv.items[item].icon
+			list[item].quantity = inv.items[item].quantity
+	#		print(inv.items[item].name)

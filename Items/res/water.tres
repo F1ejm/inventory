@@ -8,4 +8,5 @@ script = ExtResource("1_wnpwf")
 name = "Water"
 icon = ExtResource("1_xefj7")
 power = 500.0
+quantity = 1
 metadata/_custom_type_script = "uid://bcijv4gywulxc"
