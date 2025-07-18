@@ -10,12 +10,13 @@ var txt : Texture
 var quantity : int 
 var index : int
 
-func _ready() -> void:
-	inv.connect("update",update_ui)
+#func _ready() -> void:
+#	inv.connect("update",update_ui)
 
 
 #aha to tylko dlatego ze to jest w procesie XDDDDDD kocham zycie 
-func update_ui():
+#dobra juz dziala tylko jest mal problem z tymi sygnalami bo cos nie zalapuje i sie pulta
+func _process(delta: float) -> void:
 	if txt != null:
 		button.texture_normal = txt
 		var q = str(quantity)
