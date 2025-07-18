@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://b56ch450exqi8"]
+[gd_scene load_steps=6 format=3 uid="uid://b56ch450exqi8"]
 
 [ext_resource type="PackedScene" uid="uid://cs3kso4fghgbt" path="res://Character/Character.tscn" id="1_yh5la"]
 [ext_resource type="PackedScene" uid="uid://dr2e3mhxd5dem" path="res://Items/scenes_of_items/sword.tscn" id="2_2w1kt"]
 [ext_resource type="PackedScene" uid="uid://c1uw1ee224nj7" path="res://Items/scenes_of_items/water.tscn" id="3_qvhan"]
 [ext_resource type="PackedScene" uid="uid://cnhp5xf4b3r7p" path="res://Character/inventory/UI/inventory_ui.tscn" id="4_eunhr"]
+[ext_resource type="PackedScene" uid="uid://bsgffbglxea78" path="res://Items/scenes_of_items/wood.tscn" id="4_k3v36"]
 
 [node name="Main" type="Node2D"]
 
@@ -25,7 +26,16 @@ position = Vector2(185, 170)
 position = Vector2(338, 60)
 
 [node name="StaticBody2D6" parent="." instance=ExtResource("3_qvhan")]
-position = Vector2(517, 139)
+position = Vector2(511, 112)
+
+[node name="StaticBody2D7" parent="." instance=ExtResource("4_k3v36")]
+position = Vector2(622, 203)
+
+[node name="StaticBody2D8" parent="." instance=ExtResource("4_k3v36")]
+position = Vector2(14, 194)
+
+[node name="StaticBody2D9" parent="." instance=ExtResource("4_k3v36")]
+position = Vector2(286, 284)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://bsgffbglxea78"]
+
+[ext_resource type="Script" uid="uid://lxile0s15rfr" path="res://Items/scenes_of_items/item_scene.gd" id="1_te263"]
+[ext_resource type="Resource" uid="uid://bmeofnls468ci" path="res://Items/res/wood.tres" id="2_te263"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wrmtx"]
+radius = 25.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2d35r"]
+radius = 25.0799
+
+[node name="StaticBody2D" type="StaticBody2D" node_paths=PackedStringArray("txt") groups=["Item"]]
+script = ExtResource("1_te263")
+item_info = ExtResource("2_te263")
+txt = NodePath("Sprite2D")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_wrmtx")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_2d35r")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

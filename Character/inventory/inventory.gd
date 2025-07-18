@@ -2,6 +2,8 @@ extends Resource
 
 class_name inventory
 
+signal update
+
 @export var items : Array[item]
 var capasity = 6
 var is_in_inv : bool
@@ -18,11 +20,10 @@ func insert(body):
 #			print(items[index].quantity)
 #			print(items)
 #			print("do starego slota")
+			emit_signal("update")
 			return
 		items.append(body.item_info)
 		capasity -= 1 
 	else:
 		print("nichu")
-
-func add_to_items(body):
-	print(items)
+	emit_signal("update")

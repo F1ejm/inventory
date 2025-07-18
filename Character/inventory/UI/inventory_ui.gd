@@ -16,4 +16,5 @@ func _process(delta: float) -> void:
 		else:
 			list[item].txt = inv.items[item].icon
 			list[item].quantity = inv.items[item].quantity
+			list[item].index = item
 	#		print(inv.items[item].name)
